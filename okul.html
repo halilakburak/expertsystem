@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>BEST COUNTRY FOR YOU</title>
+
+
+<style>
+button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.xxButton{
+ display: inline-block;
+ outline: 0;
+ cursor: pointer;
+ border: none;
+ padding: 0 56px;
+ height: 35px;
+ line-height: 25px;
+ border-radius: 7px;
+ font-weight: 400;
+ font-size: 16px;
+ background: #fff;
+ color: #696969;
+ box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+ transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
+ :hover{
+	background: rgba(255,255,255,0.9);
+    box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+ }
+ }               
+
+
+
+</style>
+
+</head>
+
+<body> 
+<p style="color: white; font-size:24px;background-color: skyblue;text-align:left">CHOOSE THE BEST COUNTRY FOR YOU</p>
+<div id="soruDiv"> <h1>ARE YOU CONFUSED WİTH WHERE YOU MOVE TO ?</h1>
+<br/><button onclick="historySave();soru01();">WE CAN HELP YOU<br/>LET'S GET STARTED</button>
+
+</div>
+<div id="alternatifDiv"> </div>
+<br/><br/>
+<!--
+ <button id="" class="xxButton" onclick="Undo();"> <span style='font-size:20px;'>&#8630;&nbsp;</span> Geri Al</button>
+ <button id="" class="xxButton" onclick="Redo();">İleri Al<span style='font-size:20px;'>&nbsp;&#8631;</span></button>
+-->
+
+
+<script > 
+var soru=document.getElementById("soruDiv");
+var alternatif=document.getElementById("alternatifDiv");
+var teklif=document.getElementById("alternatifDiv");
+  function soru01(){
+ // let soru=document.getElementById("soruDiv");
+  soru.innerHTML="Which of the following is more important to you?";
+  soru.style.fontSize = "25px";
+  soru.style.color = "red";
+  cevap01();
+  historySave();
+  }
+  function cevap01(){
+//  let alternatif=document.getElementById("alternatifDiv");
+  alternatif.innerHTML='<button onclick="soru011();">ECONOMY</button>&nbsp;&nbsp;&nbsp;<button onclick="soru012();">CULTURE</button>&nbsp;&nbsp;&nbsp;<button onclick="soru013();">WEATHER</button>';
+  historySave();
+  } 
+  
+  
+  function soru011(){
+ // let soru=document.getElementById("soruDiv");
+  soru.innerHTML="WHİCH CONTİNENT WOULD YOU PREFER?";
+  soru.style.fontSize = "25px";
+  soru.style.color = "red";
+  cevap011();
+  historySave();
+  }
+  
+  function cevap011(){
+ // let alternatif=document.getElementById("alternatifDiv");
+  alternatif.innerHTML='<button onclick="soru0111();">ASIA</button>&nbsp;&nbsp;&nbsp;<button onclick="soru0112();">EUROPE</button>&nbsp;&nbsp;&nbsp;<button onclick="teklif5();">AMERICA</button>';
+  historySave();
+  } 
+  
+  
+  function soru0111(){
+//  let soru=document.getElementById("soruDiv");
+  soru.innerHTML="Is freedom important to you?";
+  soru.style.fontSize = "25px";
+  soru.style.color = "red";
+  cevap0111();
+  historySave();
+  }
+  
+  function cevap0111(){
+ // let alternatif=document.getElementById("alternatifDiv");
+  alternatif.innerHTML='<button onclick="teklif2();soruDiv.innerHTML=\'HERE IS OUR RECOMMENDED COUNTRİES FOR YOU. \';">YES</button>&nbsp;&nbsp;&nbsp;<button onclick="teklif1();soruDiv.innerHTML=\'HERE IS OUR RECOMMENDED COUNTRİES FOR YOU. \';">NO</button>';
+  historySave();
+  } 
+  
+  
+  function soru0112(){
+ // let soru=document.getElementById("soruDiv");
+  soru.innerHTML="WHICH REGION OF EUROPE WOULD YOU PREFER?";
+  soru.style.fontSize = "25px";
+  soru.style.color = "red";
+  cevap0112();
+  historySave();
+  }
+  
+  function cevap0112(){
+ // let alternatif=document.getElementById("alternatifDiv");
+  alternatif.innerHTML='<button onclick="teklif7();soruDiv.innerHTML=\'HERE IS OUR RECOMMENDED COUNTRİES FOR YOU. \';">BALKANS</button>&nbsp;&nbsp;&nbsp;<button onclick="teklif3();soruDiv.innerHTML=\'HERE IS OUR RECOMMENDED COUNTRİES FOR YOU. \';">ISCANDINAVIAN</button>&nbsp;&nbsp;&nbsp;<button onclick="teklif4();soruDiv.innerHTML=\'HERE IS OUR RECOMMENDED COUNTRİES FOR YOU. \';">CENTRAL EUROPE</button>';
+  historySave();
+  } 
+  
+  
+  
+  
+  
+  
+  
+  function soru012(){
+//  let soru=document.getElementById("soruDiv");
+  soru.innerHTML="WHİCH CONTİNENT WOULD YOU PREFER?";
+  soru.style.fontSize = "25px";
+  soru.style.color = "red";
+  cevap012();
+  historySave();
+  }
+  
+  function cevap012(){
+  //let alternatif=document.getElementById("alternatifDiv");
+  alternatif.innerHTML='<button onclick="soru0121();">ASIA</button>&nbsp;&nbsp;&nbsp;<button onclick="optionMuhasebe();">AFRICA</button>&nbsp;&nbsp;&nbsp;<button onclick="teklif6();">EUROPE</button>';
+  historySave();
+  } 
+  
+  
+  
+  function soru0121(){
+ // let soru=document.getElementById("soruDiv");
+  soru.innerHTML="WHİCH PART OF ASIA WOULD YOU PREFER?";
+  soru.style.fontSize = "25px";
+  soru.style.color = "red";
+  cevap0121();
+  historySave();
+  }
+  
+  function cevap0121(){
+  //let alternatif=document.getElementById("alternatifDiv");
+  alternatif.innerHTML='<button onclick="optionEticaret1();">MIDDLE EAST</button>&nbsp;&nbsp;&nbsp;<button onclick="optionEticaret2();">CENTRAL ASIA</button>&nbsp;&nbsp;&nbsp;<button onclick="optionEticaret3();">EAST ASIA</button>';
+	historySave();
+  } 
+  
+ 
+  function soru013(){
+  //let soru=document.getElementById("soruDiv");
+  soru.innerHTML="Which of the following is more important to you?";
+  soru.style.fontSize = "25px";
+  soru.style.color = "red";
+  cevap013();
+  historySave();
+  }
+  
+  function cevap013(){
+ // let alternatif=document.getElementById("alternatifDiv");
+  alternatif.innerHTML='<button onclick="optionMuzik();">LEAST POPULATED</button>&nbsp;&nbsp;&nbsp;<button onclick="optionOyun();">MOST POPULATED</button>&nbsp;&nbsp;&nbsp;<button onclick="option3D();">HIGH COST OF LIVING</button>&nbsp;&nbsp;&nbsp;<button onclick="optionYZ();">LOW COST OF LIVING</button>';
+  historySave();
+  }  
+  
+  
+  </script>
+  <script>
+  function teklif1(){
+  soru.innerHTML="HERE IS OUR RECOMMENDED COUNTRİES FOR YOU";
+ //  let teklif=document.getElementById("alternatifDiv");
+  teklif.innerHTML='These are the richest countries in asia with LOW rate of freedom<br/>QATAR<br/>UAE<br/>SAUDI ARABIA<br/>KUWAIT';
+   teklif.innerHTML+=' <br/><button  onclick="historySave();soru01();">RESTART...</button>';
+  historySave();
+}
+function teklif2(){
+soru.innerHTML="HERE IS OUR RECOMMENDED COUNTRİES FOR YOU";
+ //let teklif=document.getElementById("alternatifDiv");
+  teklif.innerHTML='These are the richest countries in asia with HIGH rate of freedom<br/>JAPAN<br/>HONG KONG<br/>SINGAPORE<br/>SOUTH KOREA<br/>';
+   teklif.innerHTML+=' <br/><button  onclick="historySave();soru01();">RESTART...</button>';
+  historySave();
+}
+function teklif3(){
+soru.innerHTML="HERE IS OUR RECOMMENDED COUNTRİES FOR YOU";
+// let teklif=document.getElementById("alternatifDiv");
+  teklif.innerHTML='#FINLAND<br/>#SWEDEN<br/>#NORWAY<br/>#DENMARK';
+   teklif.innerHTML+=' <br/><button  onclick="historySave();soru01();">RESTART...</button>';
+  historySave();
+}
+function teklif4(){
+soru.innerHTML="HERE IS OUR RECOMMENDED COUNTRİES FOR YOU";
+// let teklif=document.getElementById("alternatifDiv");
+  teklif.innerHTML='#GERMANY<br/>#FRANCE<br/>#LUXEMBOURG<br/>#AUSTRIA<br/>#SWITZERLAND<br/>#NETHERLAND';
+   teklif.innerHTML+=' <br/><button  onclick="historySave();soru01();">RESTART...</button>';
+  historySave();
+}
+function teklif5(){
+soru.innerHTML="HERE IS OUR RECOMMENDED COUNTRİES FOR YOU";
+ //let teklif=document.getElementById("alternatifDiv");
+  teklif.innerHTML='#USA<br/>#CANADA<br/>#MEXICO';
+   teklif.innerHTML+=' <br/><button  onclick="historySave();soru01();">RESTART...</button>';
+  historySave();
+}
+
+
+
+function teklif6(){
+soru.innerHTML="HERE IS OUR RECOMMENDED COUNTRİES FOR YOU";
+// let teklif=document.getElementById("alternatifDiv");
+  teklif.innerHTML='#ITALY<br/>#SPAIN<br/>#PORTUGAL<br/>#UNITED KINGDOM<br/>#FRANCE';
+   teklif.innerHTML+=' <br/><button  onclick="historySave();soru01();">RESTART...</button>';
+  historySave();
+}
+function teklif7(){
+soru.innerHTML="HERE IS OUR RECOMMENDED COUNTRİES FOR YOU";
+  teklif.innerHTML='#CROATIA<br/>#BULGARIA<br/>#SERBIA';
+  teklif.innerHTML+=' <br/><button  onclick="historySave();soru01();">RESTART...</button>';
+  historySave();
+
+}
+
+
+
+
+function optionEticaret1(){
+soru.innerHTML="HERE IS OUR RECOMMENDED COUNTRİES FOR YOU";
+// let teklif=document.getElementById("alternatifDiv");
+  teklif.innerHTML='#TURKIYE<br/>#SYRIA<br/>#IRAQ<br/>IRAN</br>#ISRAEL';
+   teklif.innerHTML+=' <br/><button  onclick="historySave();soru01();">RESTART...</button>';
+  historySave();
+}		
+function optionEticaret2(){
+soru.innerHTML="HERE IS OUR RECOMMENDED COUNTRİES FOR YOU";
+// let teklif=document.getElementById("alternatifDiv");
+  teklif.innerHTML='#CHINA<br/>#INDIA<br/>#PAKISTAN';
+   teklif.innerHTML+=' <br/><button  onclick="historySave();soru01();">RESTART...</button>';
+  historySave();
+}		
+function optionEticaret3(){
+soru.innerHTML="HERE IS OUR RECOMMENDED COUNTRİES FOR YOU";
+// let teklif=document.getElementById("alternatifDiv");
+  teklif.innerHTML='#INDONESIA<br/>#JAPAN<br/>#MALAYSIA<br/>#VIETNAM';
+   teklif.innerHTML+=' <br/><button  onclick="historySave();soru01();">RESTART...</button>';
+  historySave();
+}
+
+function optionMuhasebe(){
+soru.innerHTML="HERE IS OUR RECOMMENDED COUNTRİES FOR YOU";
+ //let teklif=document.getElementById("alternatifDiv");
+ teklif.innerHTML='#EGYPT<br/>#MOROCCO<br/>#NIGERIA<br/>#DEMOCRATIC REPUBLIC OF KONGO<br/>#ETHIOPIA';
+  teklif.innerHTML+=' <br/><button  onclick="historySave();soru01();">RESTART...</button>';
+ historySave();
+}
+
+function optionMuzik(){
+soru.innerHTML="HERE IS OUR RECOMMENDED COUNTRİES FOR YOU";
+// let teklif=document.getElementById("alternatifDiv");
+ teklif.innerHTML='#PORTUGAL<br/>#SRI LANKA<br/>#MALDIVES<br/>#BAHAMAS<br/>#FIJI ISLAND<br/>#DOMINICIAN REPUBLIC';
+  teklif.innerHTML+=' <br/><button  onclick="historySave();soru01();">RESTART...</button>';
+ historySave();
+ }
+ 
+ 
+ function optionOyun(){
+soru.innerHTML="HERE IS OUR RECOMMENDED COUNTRİES FOR YOU";
+// let teklif=document.getElementById("alternatifDiv");
+ teklif.innerHTML='#MEXICO<br/>#BRAZIL<br/>#ARGENTINA<br/>#THAILAND<br/>#COLOMBIA<br/>#PUERTO RICO<br/>#PHILLIPINES';
+  teklif.innerHTML+=' <br/><button  onclick="historySave();soru01();">RESTART...</button>';
+ historySave();}
+ 
+ function optionYZ(){
+soru.innerHTML="HERE IS OUR RECOMMENDED COUNTRİES FOR YOU";
+ //let teklif=document.getElementById("alternatifDiv");
+ teklif.innerHTML='#AUSTRALIA<br/>#NEW ZEALAND<br/>#USA(CALIFORNIA,FLORIDA)<br/>#CHILE<br/>#MONACO<br/>#IBIZA';
+  teklif.innerHTML+=' <br/><button  onclick="historySave();soru01();">RESTART...</button>';
+ historySave();
+ }
+ 
+ 
+ 
+function option3D(){
+soru.innerHTML="HERE IS OUR RECOMMENDED COUNTRİES FOR YOU";
+ //let teklif=document.getElementById("alternatifDiv");
+ teklif.innerHTML='#TURKIYE<br/>#GREECE<br/>#MADAGASCAR<br/>#URUGUAY<br/>#VENEZUELA';
+ teklif.innerHTML+=' <br/><button  onclick="historySave();soru01();">RESTART...</button>';
+ historySave();
+ }
+ 
+
+ 
+ 	
+// START - Undo Redo functionality
+var undoRedo1 = new Array();
+var undoRedo2 = new Array();
+var unStep = 0;
+ 
+function historySave() {
+   
+     unStep++;
+    undoRedo1.push(soru.innerHTML);  
+	undoRedo2.push(alternatif.innerHTML);
+	
+}
+
+function Undo() {
+
+    if (unStep >=0) {
+        unStep--;
+        soru.innerHTML = undoRedo1[unStep];
+        alternatif.innerHTML = undoRedo2[unStep];
+		
+    }
+	alert(unStep);
+}
+
+function Redo() {
+
+    if (unStep >=0 && unStep < undoRedo1.length - 1) {
+        unStep++;
+        soru.innerHTML = undoRedo1[unStep];
+		alternatif.innerHTML = undoRedo2[unStep];
+        
+    }
+	
+	alert(unStep);
+}
+
+ 
+ 
+ 
+</script>
+
+
+
+
+</body>
+</html>
